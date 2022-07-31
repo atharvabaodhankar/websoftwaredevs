@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,10 +10,12 @@
     <script src="https://kit.fontawesome.com/79f75f2740.js" crossorigin="anonymous"></script>
     <!-- https://website283075.nicepage.io/Page-1.html?version=768cd062-615d-4f87-9059-ecd901322be7 -->
 </head>
+
 <body class="body">
     <section id="header">
         <nav class="navBar">
-            <img src="https://capp.nicepage.com/d289211fe06fb0c15c85e812fb6b111416c8a610/images/default-logo.png" alt="">
+            <img src="https://capp.nicepage.com/d289211fe06fb0c15c85e812fb6b111416c8a610/images/default-logo.png"
+                alt="">
             <ul>
                 <i onclick="hideNav()" class="fa-solid fa-xmark"></i>
                 <li><a onclick="hideNav()" href="#">Home</a></li>
@@ -26,19 +29,21 @@
             <div class="text_hero">
                 <h1>Web Software</h1>
                 <h1 style="animation-delay: 2s ; ">Developers</h1>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
                 <a href="#">READ MORE</a>
             </div>
             <div class="img_hero">
-                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a9fb239c81c553dfba0355d7/ffffff.jpg" alt="">
+                <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/a9fb239c81c553dfba0355d7/ffffff.jpg"
+                    alt="">
             </div>
         </div>
     </section>
     <section id="features">
-       <div class="text_features">
-        <h1>Key Features</h1>
-       </div>
-       <div class="main_features">
+        <div class="text_features">
+            <h1>Key Features</h1>
+        </div>
+        <div class="main_features">
             <div class="main_img">
                 <!-- <img src="https://images01.nicepage.com/c461c07a441a5d220e8feb1a/4502b6935af0533d9d632233/fffffff-min.jpg" alt=""> -->
             </div>
@@ -58,17 +63,37 @@
                 <img src="/img/icons8-windows-10-personalization-50.png" alt="">
                 <h1>Responsive</h1>
             </div>
-       </div>
-
+        </div>
+    </section>
+    <section id="data">
+        <div class="visualization">
+            <div class="DV">
+                <h1>Data Visualization</h1>
+                <div class="DV_img">
+                </div>
+            </div>
+            <div class="GS">
+                <div class="goals GS_TEXT">
+                    <h3>01. GOALS</h3>
+                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <a href="#">MORE</a>
+                </div>
+                <div class="strategy GS_TEXT">
+                    <h3>02. STRATEGY</h3>
+                    <p>Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                    <a href="#">MORE</a>
+                </div>
+            </div>
+        </div>
     </section>
     <script>
-        function showNav(){
+        function showNav() {
             let navBar = document.querySelector('.navBar');
             let body = document.querySelector('.body');
             body.classList.toggle('activeBody');
             navBar.classList.toggle('activeNav');
         }
-        function hideNav(){
+        function hideNav() {
             let navBar = document.querySelector('.navBar');
             let body = document.querySelector('.body');
             navBar.classList.remove('activeNav');
@@ -76,4 +101,5 @@
         }
     </script>
 </body>
+
 </html>

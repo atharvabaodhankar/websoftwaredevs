@@ -272,31 +272,126 @@ nav ul li a:hover {
     font-weight: 400;
 }
 
-@media screen and (max-width:450px) {
-    .img_hero {
-        width: 100vw !important;
-    }
-    .text_hero h1{
-        font-size: 12vw;
-    }
-}
-@media screen and (max-width:575px) {
-    .main_features {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr !important;
-        grid-template-areas:
-            "main_img "
-            "feature1"
-            "feature2"
-            "feature3"
-            "feature4" !important;
-            height: fit-content;
-    }
-    .text_features {
-        font-size: 7vw;
-    }
+#data {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b065e;
 }
 
+.visualization {
+    /* border: 1px solid #eee; */
+    width: 90VW;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DV h1 {
+    font-size: 6rem;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.DV_img {
+    width: 713px;
+    height: 413px;
+    background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/1335557df2ab5ecab97e8c93/ssssss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.GS {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 30px;
+    justify-content: space-around;
+}
+
+.GS_TEXT {
+    color: #fff;
+    width: 280px;
+    height: fit-content;
+    /* border: 1px solid #eee; */
+    padding-bottom: 20px;
+}
+
+.GS_TEXT h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.GS_TEXT p {
+    font-size: 1.6rem;
+    padding: 20px 0 20px 50px;
+}
+
+.GS_TEXT a {
+    letter-spacing: 2px;
+    /* border-bottom: 2px solid #fff; */
+    padding-bottom: 2PX;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 20px 0 0 50px;
+}
+
+.GS_TEXT a:hover {
+    border: none;
+}
+
+
+@media screen and (max-width:1100px) {
+    .img_hero {
+        margin-right: 0;
+    }
+
+    .DV_img {
+        width: 513px;
+        height: 383px;
+    }
+
+    .DV h1 {
+        font-size: 5rem;
+    }
+
+}
+@media screen and (max-width:990px) {
+    .img_hero {
+        width: 75vw;
+        position: relative;
+        top: 5vh;
+    }
+
+    .text_hero {
+        width: 45vw;
+    }
+
+    .text_hero {
+        padding: 15vh 0 0 5vw;
+    }
+
+    #data {
+        height: fit-content;
+        padding: 100px 0 100px 0;
+    }
+    .visualization{
+        flex-direction: column;
+    }
+    .DV_img {
+        width: 80vw !important;
+    }
+    .GS {
+        flex-direction: row;
+        padding: 50px 20px;
+        column-gap: 10vw;
+    }
+    .DV h1 {
+        font-size: 6vw !important;
+    }
+}
 @media screen and (max-width:840px) {
     .hero {
         flex-direction: column;
@@ -319,35 +414,68 @@ nav ul li a:hover {
     .fa-solid:hover {
         transform: none;
     }
+
     .main_features {
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 2.5fr 1fr 1fr;
         grid-template-areas:
             "main_img main_img"
             "feature1 feature2"
             "feature4 feature3";
     }
-}
-
-@media screen and (max-width:990px) {
-    .img_hero {
-        width: 75vw;
-        position: relative;
-        top: 5vh;
-    }
-
-    .text_hero {
-        width: 45vw;
-    }
-
-    .text_hero {
-        padding: 15vh 0 0 5vw;
+    .GS {
+        column-gap: 6vw !important;
     }
 }
-
-@media screen and (max-width:1100px) {
-    .img_hero {
-        margin-right: 0;
+@media screen and (max-width:680px){
+    .GS {
+        flex-direction: column !important;
+        column-gap: none;
+    }
+    .GS_TEXT {
+        width: 70vw ;
+    }
+    .strategy {
+        margin: 50px 0 0 0 ;
+    }
+    .GS_TEXT p {
+        font-size: 1.6rem;
+        padding: 20px 0 20px 0;
+    }
+    .GS_TEXT a {
+        margin: 20px 0 0 0;
     }
 
+}
+@media screen and (max-width:575px) {
+    .main_features {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr !important;
+        grid-template-areas:
+            "main_img "
+            "feature1"
+            "feature2"
+            "feature3"
+            "feature4" !important;
+        height: fit-content;
+    }
+
+    .text_features {
+        font-size: 7vw;
+    }
+}
+@media screen and (max-width:450px) {
+    .img_hero {
+        width: 100vw !important;
+    }
+
+    .text_hero h1 {
+        font-size: 12vw;
+    }
+    .DV_img {
+        width: 90vw !important;
+    }
+    .DV h1 {
+        font-size: 9vw !important;
+    }
 }
